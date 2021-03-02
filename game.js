@@ -19,7 +19,9 @@ function main(currentTime) {
     if (
       confirm("You lost! Your score: " + keepScore() + ". Press ok to restart.")
     ) {
-      window.location = "/";
+
+        window.location.reload();
+ 
     }
     return;
   }
