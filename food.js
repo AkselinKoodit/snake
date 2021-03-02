@@ -28,5 +28,6 @@ function getRandomFoodPosition() {
   return newFoodPosition;
 }
 export function keepScore() {
+  document.getElementById("score").textContent = `Your score: ${score}`;
   return score;
 }

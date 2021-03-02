@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake!</title>
     <script src="game.js" defer type="module"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
         body {
             height: 100vh;
@@ -40,11 +42,20 @@
             border: 0.25vmin black solid;
             border-radius: 50%;
         }
+        #score {
+            margin-right: 3rem;
+            font-size: large;
+            font-family: 'Press Start 2P', cursive;
+        }
     </style>
 </head>
 <body>
     <!-- <div id = 'scoreboard'>Score</div> -->
+    <div>
+        <p id="score"></p>
+    </div>
     <div id="field"></div>
+    
     
 </body>
 </html>

@@ -17,11 +17,11 @@ const gameBoard = document.getElementById("field");
 function main(currentTime) {
   if (gameOver) {
     if (
-      confirm("You lost! Your score: " + keepScore() + ". Press ok to restart.")
+      confirm(
+        "Game over! Your score: " + keepScore() + ". Press ok to restart."
+      )
     ) {
-
-        window.location.reload();
- 
+      window.location.reload();
     }
     return;
   }
