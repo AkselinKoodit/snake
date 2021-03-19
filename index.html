@@ -17,6 +17,9 @@
             align-items: center;
             margin: 0;
             background-image: linear-gradient(to bottom right, green, white);
+            font-size: large;
+            font-family: 'Press Start 2P', cursive;
+            line-height: 2;
         }
         #field {
             background-color: rgba(255, 255, 255, 0.219);
@@ -30,7 +33,7 @@
         }
         .snake {
             background-color: lightgreen;
-            border: 0.25vmin solid black;
+            border: 0.25vmin solid green;
             border-radius: 4px;
         }
         .snake:nth-child(5n) {
@@ -43,9 +46,16 @@
             border-radius: 50%;
         }
         #score {
-            margin-right: 3rem;
-            font-size: large;
-            font-family: 'Press Start 2P', cursive;
+            position: absolute;
+            left: 4rem;
+        }
+        #placeholder {
+            position: absolute;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .invisible {
+            visibility: hidden;
         }
     </style>
 </head>
@@ -55,6 +65,9 @@
         <p id="score"></p>
     </div>
     <div id="field"></div>
+    <div id = "placeholder">
+        <div id = "endMessage">message</div>
+    </div>
     
     
 </body>
