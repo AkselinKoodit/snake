@@ -1,6 +1,6 @@
 import { getInputDirection } from "./input.js";
 
-export const snakeSpeed = 7;
+export let snakeSpeed = 5;
 const snakeBody = [{ x: 11, y: 11 }];
 let newSegments = 0;
 let score = 0;
@@ -27,6 +27,7 @@ export function draw(gameBoard) {
 
 export function growSnake(amount) {
   newSegments += amount;
+  snakeSpeed++;
 }
 
 export function onSnake(position, { ignoreHead = false } = {}) {
